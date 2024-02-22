@@ -19,7 +19,7 @@ BuzzQuizzer é um projeto desenvolvido em Angular, inspirado nos populares teste
 
 ## Como usar o BuzzQuizzer?
 
-Você pode acessar o BuzzQuizzer diretamente através do GitHub Pages, seguindo este link: BuzzQuizzer.
+Você pode acessar o BuzzQuizzer diretamente através do GitHub Pages, seguindo este link: [BuzzQuizzer](https://imkarmona.github.io/buzzquizzer-buzzfeed-clone/).
 
 ## Autor
 
