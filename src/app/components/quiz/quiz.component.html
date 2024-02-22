@@ -1,0 +1,40 @@
+<div
+  class="quiz-container flex flex-col justify-center items-center gap-8 my-16"
+>
+  <div class="flex flex-col gap-8 px-8">
+    <img src="./assets/imgs/logo.png" alt="" srcset="" />
+    <h3 class="text-2xl font-bold text-center">{{ title }}</h3>
+  </div>
+
+  <div
+    *ngIf="!finished"
+    class="quiz-questions bg-indigo-600 w-11/12 md:w-6/12 px-4 py-16 rounded-lg"
+  >
+    <h3 class="text-2xl font-bold text-center">
+      {{ questionSelected.question }}
+    </h3>
+  </div>
+
+  <div
+    *ngIf="!finished"
+    class="quiz-options grid grid-cols-1 w-11/12 md:w-6/12 gap-4"
+  >
+    <button
+      *ngFor="let option of questionSelected.options; let i = index"
+      (click)="playerChoose(option.alias)"
+      class="bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg shadow"
+    >
+      {{ option.name }}
+    </button>
+  </div>
+
+  <div
+    *ngIf="finished"
+    class="quiz-results bg-indigo-950 w-11/12 md:w-6/12 py-16 rounded-lg"
+  >
+    <h1 class="text-center text-2xl font-bold text-center">
+      O seu resultado é:
+    </h1>
+    <p class="text-center text-lg">{{ answerSelected }}</p>
+  </div>
+</div>
