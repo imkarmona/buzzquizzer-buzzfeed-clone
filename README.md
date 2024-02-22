@@ -21,7 +21,7 @@ BuzzQuizzer é um projeto desenvolvido em Angular, inspirado nos populares teste
 
 Você pode acessar o BuzzQuizzer diretamente através do GitHub Pages, seguindo este link: BuzzQuizzer.
 
-## Autores
+## Autor
 
 - Guilherme Carmona (@imkarmona)
 
